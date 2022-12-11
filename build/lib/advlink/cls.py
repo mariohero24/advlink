@@ -6,7 +6,7 @@ import yarl
 
 class Link:
 	"""
-	The :class:`Link` class for the `url.py` package containing your :prop:`url`.
+	The :class:`Link` class for the `advlink` package containing your :prop:`url`.
 	"""
 	def __init__(self, url: str, session: aiohttp.ClientSession = None, session2: aiohttp.ClientSession = None):
 		self.session = aiohttp.ClientSession(auto_decompress=False) or session
@@ -60,7 +60,7 @@ __description__: str = "Useful link managment class"
 __licence__: str = "MIT"
 """The licence type of the package"""
 
-__version__ = metadata.version("link.py")
+__version__ = metadata.version("advlink")
 """The version of the package"""
 
 # python3 -m twine upload --repository pypi dist/*

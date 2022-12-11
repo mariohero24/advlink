@@ -1,8 +1,8 @@
 Metadata-Version: 2.1
-Name: url.py
+Name: advlink
 Version: 0.1.0
 Summary: Useful link managment class
-Home-page: https://github.com/mariohero24/url.py
+Home-page: https://github.com/mariohero24/advlink
 Author: Guard Boi
 Author-email: guard@cow.futbol
 Classifier: Programming Language :: Python :: 3
