@@ -39,13 +39,13 @@ class Link:
 		"""Saves a link's text to a file"""
 		async with aiofiles.open(fp, "w") as f:
 			async with self.session2.get(self.url) as r:
-				return f.write(await r.text())
+				return await f.write(await r.text())
 
 	async def saveimg(self, fp: str):
 		"""Saves the link's image to a file"""
 		async with aiofiles.open(fp, "wb") as f:
 			async with self.session.get(self.url) as r:
-				return f.write(await r.real_url)
+				return await f.write(await r.real_url)
 
 	@property
 	def yarlURL(self):
